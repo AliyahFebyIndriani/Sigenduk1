@@ -1,0 +1,389 @@
+:root {
+    --primary-color: #4a90e2;
+    --primary-hover: #357abd;
+    --bg-light: #f8f9fa;
+    --text-dark: #333;
+    --text-light: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+@media (min-width: 992px) {
+}
+strong { font-weight: 500; }
+
+a, a:hover, a:focus {
+	color: #263238;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+h1, h2 {
+	margin-top: 0;
+	font-size: 32px;
+    font-weight: 400;
+    color: var(--text-dark);
+    line-height: 1.2;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 20px;
+    font-weight: 400;
+    color: var(--text-dark);
+    line-height: 1.4;
+	margin-top: 0;
+}
+
+img { max-width: 100%; }
+
+::-moz-selection { background: #263238; color: #fff; text-shadow: none; }
+::selection { background: #263238; color: #fff; text-shadow: none; }
+
+
+.btn-link-1 {
+	display: inline-block;
+	height: 50px;
+	margin: 5px;
+	padding: 16px 20px 0 20px;
+	background: #263238;
+	font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active { outline: 0; opacity: 0.6; color: #fff; }
+
+.btn-link-1.btn-link-1-facebook { background: #4862a3; }
+.btn-link-1.btn-link-1-twitter { background: #55acee; }
+.btn-link-1.btn-link-1-google-plus { background: #dd4b39; }
+
+.btn-link-1 i {
+	padding-right: 5px;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.btn-link-2 {
+	display: inline-block;
+	height: 50px;
+	margin: 5px;
+	padding: 15px 20px 0 20px;
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid #fff;
+	font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.btn-link-2:hover, .btn-link-2:focus,
+.btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
+
+
+/***** Top content *****/
+
+.inner-bg {
+    padding: 20;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.top-content .text {
+	color: #fff;
+}
+
+.top-content .text h1 { color: #fff; }
+
+.top-content .description {
+	margin: 20px 0 10px 0;
+}
+
+.top-content .description p { opacity: 0.8; }
+
+.top-content .description a {
+	color: #fff;
+}
+.top-content .description a:hover,
+.top-content .description a:focus { border-bottom: 1px dotted #fff; }
+
+.form-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+
+.form-top {
+	flex: 1;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-light);
+    text-align: center;
+}
+.form-top-left {
+	float: left;
+	width: 75%;
+	padding-top: 25px;
+}
+
+.form-top-left h3 { margin-top: 0; }
+
+.form-top-right {
+	float: left;
+	width: 25%;
+	padding-top: 5px;
+	font-size: 66px;
+	color: #ddd;
+	line-height: 100px;
+	text-align: right;
+}
+
+.form-bottom {
+	flex: 1;
+    padding: 80px 50px;
+    background: #ffffff;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-bottom input[type="text"],
+.form-bottom input[type="password"] {
+    width: 100%;
+    height: 48px;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+.form-bottom input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+.form-bottom form textarea {
+	height: 100px;
+}
+
+.form-bottom form button.btn {
+    width: 60%;  /* Diubah dari 100% menjadi 60% */
+    height: 48px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 auto;  /* Tambahkan ini agar tombol tetap center */
+    display: block;  /* Tambahkan ini agar margin auto bekerja */
+}
+
+.form-bottom form button.btn:hover {
+	background: var(--primary-hover);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.form-bottom form .input-error {
+	border-color: #fdfdfd85;
+}
+
+
+.form-page {
+	padding: 0 25px 25px 25px;
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	text-align: center;
+	background: #f5f5f5;
+	width: 50%;
+    border-radius: 20px;
+}
+
+.form-page form textarea {
+	height: 100px;
+}
+
+.form-page form button.btn {
+	width: 70%;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.form-page form .input-error {
+	border-color: #99bff785;
+}
+/***** Media queries *****/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+	.inner-bg { padding: 0; }
+	.form-box { width: 100%; padding: 20px; }
+
+}
+
+@media (max-width: 415px) {
+
+	h1, h2 { font-size: 32px; }
+
+}
+
+.login-footer {
+	font-size: 14px;
+	padding-top: 10px;
+	color: #ffffff;
+}
+.login-footer > a {
+	color: yellow;
+}
+.login-footer > a:hover {
+	text-decoration: underline;
+}
+
+.login-footer-top {
+	font-size: 14px;
+	color: #999;
+}
+.login-footer-top > h1{
+	font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.login-footer-top > h2{
+	font-size: 18px;
+	padding-top: 0px;
+	color: #999;
+}.login-footer-top > h3{
+	font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-weight: 300;
+}
+.login-footer-top > a {
+	color: #656561;
+}
+.login-footer-top > a:hover {
+	text-decoration: underline;
+}
+
+.login-footer-bottom {
+	font-size: 14px;
+	padding-top: 10px;
+	color: #999;
+}
+.login-footer-bottom > a {
+	color: #656561;
+}
+.login-footer-bottom > a:hover {
+	text-decoration: underline;
+}
+
+/* custom toastr success */
+.toast-success {
+  background-color: #00cb18;
+}
+/* custom toastr error */
+.toast-error {
+  background-color: #ef4836;
+}
+/* custom toastr info */
+.toast-info {
+  background-color: #4b8df8;
+}
+/* custom toastr warning */
+.toast-warning {
+  background-color: #ffb848;
+}
+.toast-message {
+	font-size: 12px;
+}
+#toast-container > div {
+	text-align: left;
+}
+.error {
+	color: #ff5f32;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 10px;
+    position: static !important;
+}
+/* Tambahkan di bagian bawah file CSS */
+
+/* Fix untuk form-group position */
+.form-group {
+    position: relative;
+}
+
+/* Style untuk toggle password icon */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+/* Pastikan input ada padding kanan untuk icon */
+.form-bottom input[type="password"],
+.form-bottom input[type="text"] {
+    padding-right: 45px !important;
+}
+
+/* Fix ketika ada error validation */
+.form-group.has-error .toggle-password,
+.form-group.error .toggle-password {
+    top: 14px;
+}
+
+.form-bottom .form-group a.btn {
+    color: #4a90e2 !important;
+    font-size: 14px;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    height: auto;
+}
+
+.form-bottom .form-group a.btn:hover {
+    color: #357abd !important;
+    text-decoration: underline;
+}
